@@ -1,0 +1,13 @@
+fastapi==0.100.0
+pydantic==1.10.13
+uvicorn==0.23.2
+python-multipart
+sentence-transformers
+torch
+numpy
+scikit-learn
+pdfminer.six
+python-docx
+PyPDF2
+spacy
+yake

@@ -1,0 +1,122 @@
+{
+  "Mobile Development": {
+    "Mandatory Keywords": ["iOS", "Android", "Swift", "Kotlin", "Flutter"],
+    "Skills": [
+      "Swift", "SwiftUI", "UIKit", "Combine", "CoreData",
+      "Kotlin", "Jetpack Compose", "Android SDK",
+      "Dart", "Flutter", "Bloc", "Provider"
+    ],
+    "Tools": ["Xcode", "Android Studio", "Firebase", "TestFlight"],
+    "Frameworks": ["SwiftUI", "UIKit", "Jetpack Compose", "Flutter Widgets"],
+    "Cloud": ["Firebase", "AWS Amplify"],
+    "Certifications": ["Apple iOS App Development", "Google Android Developer"]
+  },
+
+  "Frontend Development": {
+    "Mandatory Keywords": ["React", "Next.js", "HTML", "CSS"],
+    "Skills": [
+      "JavaScript", "TypeScript", "React", "Next.js",
+      "Redux", "HTML", "CSS", "TailwindCSS"
+    ],
+    "Tools": ["VSCode", "Webpack", "ESLint"],
+    "Frameworks": ["React", "Next.js", "Vue", "Angular"],
+    "Cloud": ["Vercel", "Netlify"],
+    "Certifications": ["Frontend Developer Certification", "Meta React Certificate"]
+  },
+
+  "Backend Development": {
+    "Mandatory Keywords": ["Python", "Node", "Django", "REST API"],
+    "Skills": [
+      "Python", "Django", "FastAPI", "Flask",
+      "Node.js", "Express.js", "REST", "GraphQL"
+    ],
+    "Tools": ["Postman", "Docker", "Git"],
+    "Frameworks": ["Django", "FastAPI", "Express", "Flask"],
+    "Cloud": ["AWS EC2", "Azure App Services", "GCP App Engine"],
+    "Certifications": ["AWS Cloud Practitioner", "PCEP Python Certification"]
+  },
+
+  "Full Stack Development": {
+    "Mandatory Keywords": ["React", "Node", "Full Stack"],
+    "Skills": [
+      "React", "Next.js", "Node.js", "Express.js",
+      "TypeScript", "JavaScript", "HTML", "CSS"
+    ],
+    "Tools": ["Git", "Docker", "Postman"],
+    "Frameworks": ["Next.js", "Express", "Django"],
+    "Cloud": ["AWS", "Azure", "GCP"],
+    "Certifications": ["Full-Stack Developer Certificate"]
+  },
+
+  "Data Engineering": {
+    "Mandatory Keywords": ["SQL", "ETL", "Data Pipelines"],
+    "Skills": [
+      "SQL", "ETL", "Airflow", "Spark",
+      "Python", "Pandas", "Hive", "Kafka"
+    ],
+    "Tools": ["Airflow", "Spark", "Kafka"],
+    "Frameworks": ["PySpark", "Hadoop"],
+    "Cloud": ["AWS Glue", "Redshift", "Azure Data Factory"],
+    "Certifications": ["Databricks Data Engineer", "AWS Data Engineer"]
+  },
+
+  "Machine Learning": {
+    "Mandatory Keywords": ["ML", "Model Training", "Scikit"],
+    "Skills": [
+      "Machine Learning", "Scikit-Learn",
+      "Data Preprocessing", "Model Deployment"
+    ],
+    "Tools": ["MLflow", "Weights & Biases"],
+    "Frameworks": ["TensorFlow", "PyTorch", "Scikit-Learn"],
+    "Cloud": ["SageMaker", "Vertex AI"],
+    "Certifications": ["TensorFlow Developer", "AWS ML Specialist"]
+  },
+
+  "AI & NLP Engineering": {
+    "Mandatory Keywords": ["NLP", "LLM", "Transformers"],
+    "Skills": [
+      "NLP", "LLMs", "Prompt Engineering",
+      "Transformers", "Tokenization"
+    ],
+    "Tools": ["HuggingFace", "OpenAI API", "LangChain"],
+    "Frameworks": ["Transformers", "spaCy"],
+    "Cloud": ["GCP Vertex AI", "OpenAI"],
+    "Certifications": ["AI Specialist", "Deep Learning Certificate"]
+  },
+
+  "DevOps & Cloud": {
+    "Mandatory Keywords": ["Docker", "CI/CD", "DevOps", "AWS"],
+    "Skills": [
+      "Docker", "Kubernetes", "Terraform", "Linux",
+      "CI/CD", "AWS", "Azure", "GCP"
+    ],
+    "Tools": ["Jenkins", "GitHub Actions", "Docker", "K8s"],
+    "Frameworks": ["Terraform", "Helm"],
+    "Cloud": ["AWS", "Azure", "Google Cloud"],
+    "Certifications": ["AWS Cloud Practitioner", "CKA Kubernetes"]
+  },
+
+  "Cybersecurity": {
+    "Mandatory Keywords": ["Security", "Firewalls", "Pen Testing"],
+    "Skills": [
+      "Pen Testing", "IAM", "Network Security",
+      "Zero Trust", "Encryption"
+    ],
+    "Tools": ["Burp Suite", "Metasploit"],
+    "Frameworks": ["NIST", "ISO 27001"],
+    "Cloud": ["Azure Security", "AWS IAM"],
+    "Certifications": ["CEH", "Security+","CISA"]
+  },
+
+  "QA & Testing": {
+    "Mandatory Keywords": ["QA", "Testing", "Automation"],
+    "Skills": [
+      "Test Automation", "Selenium", "Cypress",
+      "Unit Testing", "Integration Testing"
+    ],
+    "Tools": ["Selenium", "Cypress", "Postman"],
+    "Frameworks": ["PyTest", "JUnit"],
+    "Cloud": [],
+    "Certifications": ["ISTQB Foundation"]
+  }
+}
