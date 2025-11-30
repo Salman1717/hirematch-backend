@@ -4,7 +4,15 @@ from typing import Dict, List, Any
 import spacy
 from collections import defaultdict
 
-nlp = spacy.load("en_core_web_sm")
+nlp = None
+
+def get_nlp():
+    global nlp
+    if nlp is None:
+        import spacy
+        nlp = spacy.load("en_core_web_sm")
+    return nlp
+
 
 EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
 PHONE_RE = re.compile(r"(\+?\d{1,3}[\s-])?(?:\(?\d{2,4}\)?[\s-]?)?\d{3,4}[\s-]?\d{3,4}")
@@ -66,7 +74,7 @@ def normalize_formatting(text: str) -> str:
 
 
 def tokenize_sentences(text: str) -> List[str]:
-    doc = nlp(text)
+    doc = get_nlp()(text)
     return [sent.text.strip() for sent in doc.sents if sent.text.strip()]
 
 
@@ -123,7 +131,7 @@ def extract_skills_from_text(text: str, max_skills=60) -> List[str]:
     """
     Heuristic skills extractor using noun chunks + simple token matching.
     """
-    doc = nlp(text)
+    doc = get_nlp()(text)
     candidates = set()
 
     # noun chunks
@@ -202,17 +210,3 @@ def build_clean_resume_json(raw_text: str) -> Dict[str, Any]:
         "sections_raw": sections
     }
 
-
-# Quick CLI test helper
-if __name__ == "__main__":
-    import sys
-    path = sys.argv[1] if len(sys.argv) > 1 else None
-    if not path:
-        print("Provide a file path with resume text (or run parse_resume to get raw).")
-        sys.exit(1)
-
-    # if path is a text file
-    with open(path, "r", encoding="utf-8") as f:
-        raw = f.read()
-    out = build_clean_resume_json(raw)
-    print(json.dumps(out, indent=2)[:4000])
