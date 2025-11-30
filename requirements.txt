@@ -1,20 +1,29 @@
+# Core FastAPI
 fastapi==0.100.0
-pydantic==1.10.13
 uvicorn[standard]==0.23.2
+pydantic==1.10.13
 python-multipart
 
-sentence-transformers
+# NLP + ML
+sentence-transformers==2.2.2
 torch
-numpy
 scikit-learn
-yake
+numpy==1.23.5
 
-# PDF, Doc parsing
+# spaCy stack pinned
+spacy==3.5.3
+thinc==8.1.10
+blis==0.7.9
+preshed==3.0.8
+murmurhash==1.0.9
+catalogue==2.0.8
+srsly==2.4.7
+cymem==2.0.7
+
+# Parsing
 pdfminer.six
 python-docx
 PyPDF2
 
-# spaCy stack (compatible with Python 3.10 only)
-spacy==3.7.2
-thinc==8.2.2
-blis==0.7.11
+# Keyword extraction
+yake
