@@ -2,13 +2,19 @@ fastapi==0.100.0
 pydantic==1.10.13
 uvicorn[standard]==0.23.2
 python-multipart
-pdfminer.six
-python-docx
-PyPDF2
+
 sentence-transformers
 torch
 numpy
 scikit-learn
 yake
+
+# PDF, Doc parsing
+pdfminer.six
+python-docx
+PyPDF2
+
+# spaCy stack (compatible with Python 3.10 only)
 spacy==3.7.2
 thinc==8.2.2
+blis==0.7.11
